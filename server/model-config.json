@@ -31,5 +31,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "peasant": {
+    "dataSource": "db",
+    "public": true
+  },
+  "farm": {
+    "dataSource": "db",
+    "public": true
   }
 }
