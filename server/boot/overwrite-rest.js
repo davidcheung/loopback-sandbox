@@ -8,7 +8,7 @@ module.exports = function(app) {
 
   //   console.log(res)
   // });
-  var name = "bad";
+  var username = "bad";
   var a_peasant  = new peasant();
   
   // console.log( a_peasant.name );
@@ -20,7 +20,7 @@ module.exports = function(app) {
   // 	console.log( "isValid --->",isValid );
   // });
 	
-	peasant.create({ },function(err,res){ 
+	peasant.create({ username : username },function(err,res){ 
 		if (err) console.log( "HAS ERROR :( ", err);
 		console.log( "result", err);
 
