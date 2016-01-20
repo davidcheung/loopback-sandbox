@@ -31,5 +31,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Author": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Reader": {
+    "dataSource": "db",
+    "public": true
+  },
+  "picture": {
+    "dataSource": "db",
+    "public": true
   }
 }
