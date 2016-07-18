@@ -1,0 +1,34 @@
+{
+  "name": "folder",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "account",
+      "foreignKey": ""
+    },
+    "photos": {
+      "type": "hasMany",
+      "model": "photo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "model": "*",
+      "property": "*",
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+
+  "methods": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "account",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "folders": {
+      "type": "hasMany",
+      "model": "folder",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

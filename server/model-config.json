@@ -31,5 +31,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "account": {
+    "dataSource": "db",
+    "public": true
+  },
+  "folder": {
+    "dataSource": "db",
+    "public": true
+  },
+  "photo": {
+    "dataSource": "db",
+    "public": true
   }
 }

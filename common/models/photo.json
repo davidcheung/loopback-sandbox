@@ -1,0 +1,24 @@
+{
+  "name": "photo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "folder": {
+      "type": "belongsTo",
+      "model": "folder",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
